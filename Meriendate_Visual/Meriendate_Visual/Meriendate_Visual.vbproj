@@ -72,11 +72,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="interfaz_base.vb">
+    <Compile Include="interfaces\generales\interfaz_base.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="interfaz_base.Designer.vb">
+    <Compile Include="interfaces\generales\interfaz_base.Designer.vb">
       <DependentUpon>interfaz_base.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfaces\generales\interfaz_contacto.Designer.vb">
+      <DependentUpon>interfaz_contacto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\generales\interfaz_contacto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -117,9 +123,7 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
